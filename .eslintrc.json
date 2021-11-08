@@ -1,7 +1,8 @@
 {
   "env": {
     "es2021": true,
-    "node": true
+    "node": true,
+    "browser": true
   },
   "parserOptions": {
     "sourceType": "module",
@@ -12,7 +13,14 @@
     }
   },
   "plugins": ["react"],
-  "extends": ["eslint:recommended", "prettier"]
-  // "rules": {  }
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
+  "rules": {
+    "no-console": "off"
+  }
   // "globals": {  }
 }

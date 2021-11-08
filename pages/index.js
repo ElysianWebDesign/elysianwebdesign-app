@@ -1,3 +1,4 @@
+import React from 'react';
 import Head from 'next/head';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
@@ -11,7 +12,6 @@ export default function Home() {
           <title>Elysian Web Design</title>
           <link rel='icon' href='/favicon.ico' />
         </Head>
-
         <main className='flex flex-col items-center justify-center w-full flex-1 px-20 text-center'>
           <h1 className='text-6xl font-bold'>
             Welcome to{' '}
@@ -20,7 +20,6 @@ export default function Home() {
             </a>
           </h1>
         </main>
-
         <Footer />
       </div>
     </>
