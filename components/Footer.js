@@ -1,9 +1,11 @@
-export default function Footer({}) {
+import React from 'react';
+
+export default function Footer() {
   return (
     <footer>
-      <p>
+      <p className='text-blue-dark'>
         Carefully crafted by{' '}
-        <a className='text-blue-600' href='/'>
+        <a className='text-blue-dark hover:text-yellow-light' href='/'>
           Elysian Web Design
         </a>
       </p>
